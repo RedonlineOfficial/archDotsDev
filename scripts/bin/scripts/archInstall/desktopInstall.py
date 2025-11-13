@@ -96,7 +96,7 @@ def updateSystem():
     except Exception as e:
         print(f"An error has occured: {str(e)}")
 
-def installPackages
+def installPackages():
     try: 
         command = [ 'sudo', 'pacman', '-S', '--noconfirm' ] + packages
 
@@ -119,7 +119,7 @@ def installPackages
     except Exception as e:
         print(f"An error has occured: {str(e)}")
 
-def installAurHelper
+def installAurHelper():
     def run(cmd, cwd=None, debug=False, check=False):
         if debug:
             print(f"[DEBUG] Running command: {' '.join(command)}")
@@ -184,7 +184,7 @@ def installAurHelper
             print("Unexpected error:", str(e))
             return 4
 
-def installAurPackages
+def installAurPackages():
     try: 
         command = [ 'sudo', 'yay', '-S', '--answerclean', 'None', '--answerdiff', 'None', '--noconfirm' ] + aurPackages
 
