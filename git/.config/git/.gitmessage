@@ -1,0 +1,45 @@
+# ------------------------ START COMMIT MESSAGE ------------------------
+# <type>(<scope>)!: <description>
+# |<------ preferably using 50 characters ------->|<-----(72 max)----->|
+
+# Optional <body>
+# |<------------------ 72 characters maximum per line ---------------->|
+
+# Optional <footer>
+# |<------------------ 72 characters maximum per line ---------------->|
+
+# ------------------------- END COMMIT MESSAGE -------------------------
+#
+# <type>: What type of commit this is
+#   - feat:     New features
+#   - fix:	Bug fixes
+#   - build:	Changes in build system or environment
+#   - test:	Adding new tests or correcting defective tests
+#   - docs:	Changes in documentation only
+#   - refactor:	For rewriting or restructuring code that does not affect behavior
+#   - style:	Changes made in code styles and no changes in logic
+#   - chore:	Miscellaneous tasks
+#
+# <scope> (Optional): What section of the code base does this apply to
+#   - Allowed content changes from project to project
+#   - Issue identifies are not valid scopes
+#
+# !: Indicates a breaking change
+#
+# <descripotion>: A concise description of the change
+#   - Imperative (as if "This commit will..." was prepended)
+#   - No capitalization at beginning or punctuation at end
+#
+# <body> (Optional): Additional information about code changes
+#   - Multiple paragraphs can be included
+#   - Imperative with proper capitalization and punctuation.
+#
+# <footer> (Optional): List of key-value pairs that store metadata
+#  - BREAKING CHANGE: <description>	For breaking changes, can be ommited if "!" is included in subject line
+#  - Automatic issue management		Reference issues (example: "Close #123", "Reference #123", "See #123", etc)
+#  - Email-like metadata		Personal identifiers such as "Signed-off-by:", "Co-authored-by:", etc
+#
+# Special Cases:
+#   - "Initial commit" 		For the first commit in a git repository
+#   - "Merge branch...":	Default commit message for automatic merges
+#   - "Revert...":		Default commit message for reverting commits
