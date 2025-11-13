@@ -22,4 +22,4 @@ pacman -S --needed --noconfirm ${pythonPkg}
 echo -e "\n${pythonPkg} installed!\n" 
 
 # Start python portion
-${0%/*}/init.py
+${0%/*}/desktopInstall.py
